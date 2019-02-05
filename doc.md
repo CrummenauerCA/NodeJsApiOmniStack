@@ -9,3 +9,5 @@ http://localhost:3000/
 // Serve para reiniciar servidor automaticamente após modifiações no código
 #yarn add nodemon -D
 // -D indica dependência de desenvolvimento
+
+// Para conectar com o MongoDB: mongodb://localhost:27017/omnistack
