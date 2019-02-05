@@ -11,3 +11,9 @@ http://localhost:3000/
 // -D indica dependência de desenvolvimento
 
 // Para conectar com o MongoDB: mongodb://localhost:27017/omnistack
+
+// Real time - websockets
+#yarn add socket.io
+
+// Permitir recursos externos
+#yarn add cors
