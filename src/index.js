@@ -9,15 +9,15 @@ const io = require('socket.io')(server);
 
 
 mongoose.connect('mongodb://localhost:27017/omnistack', {
-    useNewUrlParser: true
+  useNewUrlParser: true
 }).catch(error => {
-    console.log('Deu ruim', error);
+  console.log('Deu ruim', error);
 });
 
 // Criando um middleware - interceptador
 app.use((req, res, next) => {
-    req.io = io;
-    return next();
+  req.io = io;
+  return next();
 });
 
 app.use(cors());
@@ -25,5 +25,5 @@ app.use(express.json());
 app.use(require('./routes'));
 
 server.listen(3000, () => {
-    console.log('Server started on port 3000');
+  console.log('Server started on port 3000');
 });
